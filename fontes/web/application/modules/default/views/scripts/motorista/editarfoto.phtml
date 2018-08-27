@@ -1,0 +1,10 @@
+<header class="codrops-header">
+	<h1>Editar Foto</h1>
+</header>
+<div class="component">
+	<h2><?=$this->mensagem?></h2>
+	<p>Foto atual:</p>
+	<img id="uploadFoto" width="70" height="70" src="<?=$this->generica?>" alt="Motorista" />
+	<br /><a href="<?=$this->hrefExcluir?>">Excluir foto</a>
+	<?php echo $this->form; ?>
+</div>

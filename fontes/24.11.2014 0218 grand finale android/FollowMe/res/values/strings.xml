@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <!-- menu main -->
+   
+   
+   
+    <!-- menu login -->
+    
+    <string name="login_menu_entrar">Entrar</string>
+    <string name="login_menu_cadastrar">Cadastrar</string>
+    
+    <!-- menu form -->
+    
+    <string name="form_menu_salvar">Salvar</string>
+    <string name="form_menu_voltar"/>
+    
+    <!-- menu grupo -->
+    
+    <string name="grupo_menu_voltar">Voltar</string>
+    <string name="grupo_menu_editar">Editar</string>
+    
+    <!-- menu lista_grupo_trajeto -->
+    
+    <string name="lista_grupo_trajeto_menu_voltar">Voltar</string>
+    
+    <!-- menu grupo_trajeto_cadastrar -->
+    
+    <string name="grupo_trajeto_cadastrar_voltar">Voltar</string>
+    <string name="grupo_trajeto_cadastrar_salvar">Salvar</string>
+    
+    <!-- menu grupo_trajeto_selecionado -->
+    
+    <string name="grupo_trajeto_selecionado_menu_voltar">Voltar</string>
+    <string name="grupo_trajeto_selecionado_menu_salvar">Salvar</string>
+
+   
+     <!-- menu_grupo_trajeto_list_busca -->
+    
+    <string name="menu_grupo_trajeto_list_busca_ajuda">Buscar</string>
+    <string name="menu_grupo_trajeto_list_busca_voltar">Voltar</string>
+    
+    <!-- menu_grupo_trajeto_list_juntarse -->
+    <string name="menu_grupo_trajeto_juntarse_voltar">Voltar</string>
+     <string name="menu_grupo_trajeto_juntarse_ajuda">Ajuda</string>
+    
+    <!-- menu_buscar_grupo_trajeto -->
+    <string name="menu_buscar_grupo_trajeto_voltar">Voltar</string>
+     <string name="menu_buscar_grupo_trajeto_procurar">Procurar</string>
+    
+      <!-- menu_grupo_trajeto_list_motorista-->
+    <string name="menu_grupo_trajeto_list_motorista_voltar">Voltar</string>
+     <string name="menu_grupo_trajeto_list_motorista_juntar">Juntar-se</string>
+      <string name="menu_grupo_trajeto_list_motorista_sair">Sair Grupo</string>
+      
+     <!-- menu_main_list_carregar_grupo_trajeto --> 
+     <string name="menu_main_list_carregar_grupo_trajeto_voltar">Voltar</string>
+     
+     
+    
+    
+
+    <string name="app_name">Siga-me</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cadastro_nome">Nome</string>
+    <string name="cadastro_sexo">Sexo</string>
+    <string name="cadastro_m">M</string>
+    <string name="cadastro_f">F</string>
+    <string name="cadastro_email">E-mail</string>
+    <string name="cadastro_conf_email">Confirmar Email</string>
+    <string name="cadastro_senha">Senha</string>
+    <string name="cadastro_conf_senha">Confirmar Senha</string>
+    <string name="cadastro_btn_conf">Confirmar</string>
+    <string name="cadastro_btn_voltar">Voltar</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_senha">Senha</string>
+    <string name="login_btn_login">Login</string>
+    <string name="motorista_nome">Nome:</string>
+    <string name="motorista_id">ID:</string>
+    <string name="motorista_nascimento">Data de Nascimento:</string>
+    <string name="motorista_email">E-mail:</string>
+    <string name="login_cadastrar">Cadastrar</string>
+    
+    
+    
+    <string name="erro_conexao">Erro na rede</string>
+    <string name="erro_login">E-mail ou senha inválidos.</string>
+    <string name="erro_email">E-mail já cadastrado.</string>
+    <string name="erro_api">Falha interna da API.</string>
+    <string name="erro_gps">Perda de sinal GPS.</string>
+    <string name="erro_dados">Perda de conexão de dados.</string>
+    
+    <string name="titulo_cadastro">Cadastro</string>
+    <string name="titulo_edicao">Edição</string>
+    
+    
+     <!-- Cadastrar Grupo de Trajeto -->
+    <string name="lblActGrupoTrajetoTitulo">CADASTRAR GRUPO DE TRAJETO</string>
+    <string name="lblActGrupoTrajetoNomeGrupo">Nome do Grupo de Trajeto</string>
+    <string name="lblActGrupoTrajetoLocalEncontro">Local de Encontro</string>
+    <string name="lblActGrupoTrajetoLocalDestino">Local de Destino</string>
+    <string name="lblActGrupoTrajetoDataSaida">Data de Saída</string>
+    <string name="lblActGrupoTrajetoHoraSaida">Hora de Saída</string>
+    <string name="btnActGrupoTrajetoVoltar">Voltarr</string>
+    <string name="btnActGrupoTrajetoSalvar">Salvar</string>
+    
+    <!-- form para editar um grupo de trajeto selecionado da listview -->
+    <string name="lblActGrupoTrajetoSelTitulo">EDITAR GRUPO DE TRAJETO</string>
+    <string name="lblActGrupoTrajetoSelNomeGrupo">Nome do Grupo de Trajeto</string>
+    <string name="lblActGrupoTrajetoSelLocalEncontro">Local de Encontro</string>
+    <string name="lblActGrupoTrajetoSelLocalDestino">Local de Destino</string>
+    <string name="lblActGrupoTrajetoSelDataSaida">Data de Saída</string>
+    <string name="lblActGrupoTrajetoSelHoraSaida">Hora de Saída</string>
+   
+    
+    
+    <!-- editar do grupo de trajeto -->
+ 
+    
+    <!-- activity_motorista_autorizacao -->
+    
+     <!-- activity_buscar_grupo_trajeto -->
+     <string name="titulo_buscar_grupo">Buscar Grupo Trajeto</string>
+     <string name="lblBuscarGrupoActBuscarGrupoTrajeto">Buscar</string>
+     
+      <!-- activity_lista_busca_grupo_trajeto -->
+      
+      
+      
+       <!-- activity_juntarse_grupo_trajeto -->
+     <string name="titulo_grupo_traj_list_juntarse_act">Juntar ao Grupo</string>
+     
+     <!--titulo_main_list_carregar_grupo_activity_act  -->
+     <string name="titulo_main_list_carregar_grupo_activity_act">Selecione um grupo</string>
+   
+     
+    
+        
+    <!-- api -->
+    <string name="api_key">afae92e4fb8ca1258431f1a709910ca2dbd2f0e0</string>
+    <string name="api_url">http://186.202.184.109/tcc2014/sistema/api/</string>
+
+</resources>

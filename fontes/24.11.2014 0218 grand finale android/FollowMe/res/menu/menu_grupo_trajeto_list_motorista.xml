@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/menu_grupo_trajeto_list_motorista_voltar" android:title="@string/menu_grupo_trajeto_list_motorista_voltar" android:icon="@drawable/ic_menu_back" android:showAsAction="ifRoom|withText"></item>
+   <item android:id="@+id/menu_grupo_trajeto_list_motorista_juntar" android:title="@string/menu_grupo_trajeto_list_motorista_juntar" android:icon="@drawable/ic_menu_invite" android:showAsAction="ifRoom|withText"></item>
+   <item android:id="@+id/menu_grupo_trajeto_list_motorista_sair" android:title="@string/menu_grupo_trajeto_list_motorista_sair" android:icon="@drawable/ic_menu_blocked_user" android:showAsAction="ifRoom|withText"></item>
+
+</menu>

@@ -1,0 +1,153 @@
+<div id="login" class="animate form">
+	<form autocomplete="on" method="post">
+		<?php if ($this->erroLogin) {?>
+			<p class="erro"><?=$this->erroLogin?></p>
+		<?php }?>
+		<p>
+			<label for="loginEmail" class="uname" data-icon="u"><?=$this->textoEmail?></label> 
+			<input id="loginEmail" name="loginEmail"
+				required="required" type="text"
+				placeholder="meuemail@email.com" value="<?=$this->postLoginEmail?>"/>
+		</p>
+		<p>
+			<label for="loginSenha" class="youpasswd" data-icon="p"><?=$this->textoSenha?>
+			</label> <input id="loginSenha" name="loginSenha"
+				required="required" type="password"  />
+		</p>
+		<a href="<?=$this->hrefRecuperar?>">Esqueci a senha</a>
+<!-- 							<p class="keeplogin"> -->
+<!-- 								<input type="checkbox" name="loginkeeping" id="loginkeeping" -->
+<!-- 									value="loginkeeping" /> <label for="loginkeeping">Mantenha-me logado</label> -->
+<!-- 							</p> -->
+		<p class="login button">
+			<input type="submit" value="<?=$this->textoEntrar?>" />
+		</p>
+		<p class="change_link">
+			<?=$this->textoPrimeiraVez?> <a href="#toregister" class="to_register"><?=$this->textoCadastrar?></a>
+		</p>
+	</form>
+</div>
+
+<div id="register" class="animate form">
+	<form autocomplete="on" method="post">
+		<p>
+			<label for="nome" class="uname" data-icon="u">Nome</label> 
+			<input id="nome"
+				name="nome" required="required" type="text"
+				placeholder="Meu Nome" 
+				value="<?=$this->postNome?>" />
+		</p>
+		<?php if ($this->erroNome) {?>
+			<p class="erro"><?=$this->erroNome?></p>
+		<?php }?>
+		<p>
+			<label class="uname">Data de Nascimento</label><br /> 
+			<select id="dia" name="dia"><option value="null"> </option></select>
+			<select id="mes" name="mes"><option value="null"> </option></select>
+			<select id="ano" name="ano"><option value="null"> </option></select>
+		</p>
+		<?php if ($this->erroNascimento) {?>
+			<p class="erro"><?=$this->erroNascimento?></p>
+		<?php }?>
+		<p>
+			<label for="email" class="youmail" data-icon="e">E-mail</label> 
+			<input id="email" name="email"
+				required="required" type="email"
+				placeholder="email@email.com" 
+				value="<?=$this->postEmail?>" />
+		</p>
+		<?php if ($this->erroEmail) {?>
+			<p class="erro"><?=$this->erroEmail?></p>
+		<?php }?>
+		<p>
+			<label for="confEmail" class="youmail" data-icon="e">Confirme seu E-mail</label> 
+			<input id="confEmail" name="confEmail"
+				required="required" type="email"
+				placeholder="email@email.com" 
+				value="<?=$this->postConfEmail?>" />
+		</p>
+		<?php if ($this->erroConfEmail) {?>
+			<p class="erro"><?=$this->erroConfEmail?></p>
+		<?php }?>
+		<p>
+			<label for="senha" class="youpasswd" data-icon="p">Senha</label> 
+			<input id="senha"
+				name="senha" required="required" type="password"
+				placeholder="senha" />
+		</p>
+		<?php if ($this->erroSenha) {?>
+			<p class="erro"><?=$this->erroSenha?></p>
+		<?php }?>
+		<p>
+			<label for="confSenha" class="youpasswd"
+				data-icon="p">Confirme sua Senha</label> <input
+				id="confSenha" name="confSenha"
+				required="required" type="password" placeholder="senha" />
+		</p>
+		<?php if ($this->erroConfSenha) {?>
+			<p class="erro"><?=$this->erroConfSenha?></p>
+		<?php }?>
+		<p class="signin button">
+			<input type="submit" value="Cadastrar" />
+		</p>
+		<p class="change_link">
+			Já está cadastrado? <a href="#tologin" class="to_register">Fazer Login</a>
+		</p>
+	</form>
+</div>
+
+<script type="text/javascript">
+	var selectdia= document.getElementById("dia");
+	for(var i=1; i<=31; i++){
+		var value;
+		if(i<10){
+			value = "0"+i;
+		}
+		else{
+			value = i;
+		}
+		var dia = document.createElement("option");
+		dia.setAttribute("value", value);
+	    var txtdia = document.createTextNode(value);
+	    dia.appendChild(txtdia);
+	    selectdia.appendChild(dia);
+	}
+
+	var selectmes= document.getElementById("mes");
+	for(var i=1; i<=12; i++){
+		if(i<10){
+			value = "0"+i;
+		}
+		else{
+			value = i;
+		}
+		var mes = document.createElement("option");
+		mes.setAttribute("value", value);
+	    var txtmes = document.createTextNode(value);
+	    mes.appendChild(txtmes);
+	    selectmes.appendChild(mes);
+	}
+
+	var selectano= document.getElementById("ano");
+	var current = new Date().getFullYear();
+	for(var i=1900; i<=current; i++){
+		var ano = document.createElement("option");
+		ano.setAttribute("value", i);
+	    var txtano = document.createTextNode(i);
+	    ano.appendChild(txtano);
+	    selectano.appendChild(ano);
+	}
+
+	<?php if ($this->postDia) {?>
+		document.getElementById("dia").selectedIndex = "<?=$this->postDia?>";
+	<?php }?>
+
+	<?php if ($this->postMes) {?>
+		document.getElementById("mes").selectedIndex = "<?=$this->postMes?>";
+	<?php }?>
+	
+	<?php if ($this->postAno) {?>
+		var index = <?=$this->postAno?> - 1899;
+		document.getElementById("ano").selectedIndex = index;
+	<?php }?>
+</script>

@@ -1,0 +1,23 @@
+<tr>
+	<td>
+    <a href="<?=$this->placeholder('href')->ver . '/grupo/' . $this->row->id_grupo_trajeto?>">
+    	<img src="<?=$this->placeholder('src')->viewIcon?>" alt="Abrir Grupo" title="Abrir Grupo" />
+    </a>
+  </td>
+	<td>
+    <?=$this->row->nome_grupo_trajeto?>
+  </td>
+  <td>
+    <?=$this->row->email?>
+  </td>
+	<td>
+    <?=$this->row->local_encontro?>
+  </td>
+	<td>
+    <?=$this->row->data_saida?>
+  </td>
+	<td>
+    <?=$this->row->hora_saida?>
+  </td>
+
+</tr>

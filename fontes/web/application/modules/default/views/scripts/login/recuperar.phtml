@@ -1,0 +1,15 @@
+
+<div>
+	<p><?=$this->mensagem?></p><br />
+	<form autocomplete="on" method="post">
+		<label class="uname" for="email">Digite o e-mail de cadastro</label>
+		<input type="text" name="email" id="email"
+			required="required" value="<?=$this->postEmail?>" />
+		<p class="login button">
+			<input type="submit" value="Enviar" />
+		</p>
+		<p>
+			Lembrou sua senha? <a href="<?=$this->hrefLogin?>" class="to_login">Entrar</a>
+		</p>
+	</form>
+</div>

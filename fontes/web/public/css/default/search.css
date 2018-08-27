@@ -1,0 +1,63 @@
+
+.sb_wrapper input[type="text"],
+ul.sb_dropdown{
+	background: #fff;
+	color: #4e4a46;
+	border:1px solid #fff;
+	font-size:24px;
+	outline:none;
+	padding:6px 5px 6px 20px;
+	width:295px;
+	margin:3px 0px;
+	float:left;
+}
+ul.sb_dropdown{
+	float:left;
+	list-style:none;
+	width:360px;
+}
+ul.sb_dropdown li{
+	font-size:16px;
+	line-height:32px;
+	height:29px;
+	float:left;
+	width:50%;
+}
+ul.sb_dropdown li input[type="checkbox"]{
+	float:left;
+	margin:10px 4px 0 5px;
+}
+ul.sb_dropdown li.sb_filter{
+	width:348px;
+	border:1px solid #f9f9f9;
+	clear:both;
+	background: #ddd;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#444;
+	height:16px;
+	line-height:16px;
+	padding:5px;
+	-moz-box-shadow:0px 0px 2px #777;
+	-webkit-box-shadow:0px 0px 3px #555 inset;
+	-box-shadow:0px 0px 3px #555 inset;
+
+}
+
+input.sb_search{
+	height:43px;
+	width:50px;
+	float:left;
+	border:none;
+	margin:3px 0px;
+	border:1px solid #fff;
+	-moz-box-shadow:1px 1px 3px #555;
+	-webkit-box-shadow:1px 1px 3px #555;
+	-box-shadow:1px 1px 3px #555;
+	outline:none;
+	cursor:pointer;
+}
+input.sb_search:hover{
+	background-color:#fff;
+}

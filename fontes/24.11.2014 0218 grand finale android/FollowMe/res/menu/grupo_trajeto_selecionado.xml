@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/grupo_trajeto_selecionado_voltar" android:title="@string/grupo_trajeto_selecionado_menu_voltar" android:icon="@drawable/ic_menu_back" android:showAsAction="ifRoom|withText"></item>
+   <item android:id="@+id/grupo_trajeto_selecionado_salvar" android:title="@string/grupo_trajeto_selecionado_menu_salvar" android:icon="@drawable/ic_menu_save" android:showAsAction="ifRoom|withText"></item>
+   
+
+</menu>

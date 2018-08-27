@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/form_voltar" android:title="@string/form_menu_voltar" android:showAsAction="ifRoom|withText" android:icon="@drawable/ic_menu_back"></item><item android:id="@+id/form_salvar" android:title="@string/form_menu_salvar" android:showAsAction="ifRoom|withText" android:icon="@drawable/ic_menu_save"></item>
+    
+    
+
+</menu>

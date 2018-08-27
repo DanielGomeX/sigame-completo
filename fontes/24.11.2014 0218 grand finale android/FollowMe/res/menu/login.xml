@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_cadastrar" android:title="@string/login_menu_cadastrar" android:showAsAction="ifRoom|withText"></item>
+    <item android:id="@+id/menu_entrar" android:title="@string/login_menu_entrar" android:icon="@drawable/ic_menu_login" android:showAsAction="ifRoom|withText"></item>
+    
+    
+
+</menu>

@@ -1,0 +1,90 @@
+<script>
+        $(function() {
+            $( "#dataSaida" ).datepicker({dateFormat: 'dd/mm/yy'});
+        });
+</script>
+<header class="codrops-header">
+	<h1>Novo Grupo <a href="<?=$this->hrefRetornar?>"><img src="<?=$this->voltarIcon?>" /></a></h1>
+</header>
+<div class="component">
+	<form method="post">
+	<table>
+		<tr>
+			<td>
+				<label>Nome do Grupo de Trajeto:</label>
+			</td>
+			<td>
+				<input required="required" type="text"
+					name="nomeGrupoTrajeto" id="nomeGrupoTrajeto"
+					value="<?=$this->postNome?>">
+	    				<?php if($this->erroNomeGrupoTrajeto){?>
+	    					<?=$this->erroNomeGrupoTrajeto?><br />
+	    				<?php } else{echo '<br />';}?>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			<label>Data de Saída</label>
+    		</td>
+    		<td>
+    			<input required="required" type="text" name="dataSaida" id="dataSaida" 
+    				value="<?=$this->postData?>">
+    				<?php if($this->erroDataSaida){?>
+    				<?=$this->erroDataSaida?><br />
+    				<?php } else{echo '<br />';}?>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			<label>Local de Encontro: </label> 
+    		</td>
+    		<td>
+    			<input required="required" type="text"
+					name="localEncontro" id="localEncontro" 
+					value="<?=$this->postLocalEncontro?>">
+    					<?php if($this->erroLocalEncontro){?>
+    						<?=$this->erroLocalEncontro?><br />
+    					<?php } else{echo '<br />';}?>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			<label>Local de Destino: </label> 
+    		</td>
+    		<td>
+    			<input required="required" type="text"
+					name="localDestino" id="localDestino" 
+					value="<?=$this->postLocalDestino?>">
+    					<?php if($this->erroLocalDestino){?>
+    						<?=$this->erroLocalDestino?><br />
+    					<?php } else{echo '<br />';}?>
+    		</td>
+    	</tr>
+	    <tr>
+	    	<td>
+	    		<label>Hora de Saída</label>
+	    	</td>
+	    	<td>
+	    		 <input required="required" type="text" name="horaSaida"
+					id="horaSaida" value="<?=$this->postHora?>">
+	    			<?php if($this->erroHoraSaida){?>
+	    				<?=$this->erroHoraSaida?><br />
+	    			<?php } else{echo '<br />';}?>
+	    	</td>
+	    </tr>
+    	<tr>
+	    	<td>
+	    		<input type="submit" value="Salvar">
+	    	</td>
+	    	<td></td>
+    	</tr>
+    </table>
+    
+	</form>
+
+<?php if($this->mensagem){?>
+  	<?=$this->mensagem?><br />
+<?php } else{echo '<br />';}?>
+
+	<script>google.maps.event.addDomListener(window, 'load', initialize);</script>
+</div>

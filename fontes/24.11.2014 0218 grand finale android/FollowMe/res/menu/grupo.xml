@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item android:id="@+id/grupo_voltar" android:title="@string/grupo_menu_voltar" android:icon="@drawable/ic_menu_back" android:showAsAction="ifRoom|withText"></item>
+   <item android:id="@+id/grupo_editar" android:title="@string/grupo_menu_editar" android:icon="@drawable/ic_menu_edit" android:showAsAction="ifRoom|withText"></item>
+
+</menu>

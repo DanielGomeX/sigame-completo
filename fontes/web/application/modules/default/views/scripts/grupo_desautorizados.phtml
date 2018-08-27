@@ -1,0 +1,5 @@
+<a href="<?=$this->placeholder('href')->autorizar . '/motorista/' . $this->row->id_motorista?>">
+  	<img alt="<?=$this->row->nome_motorista?>" title="<?=$this->row->nome_motorista?>" width="96px" height="96px" src="<?php
+  		$foto = glob(APPLICATION_PATH.'/../public/fotos/' . sha1($this->row->id_motorista) . "*.{jpg,gif,png}", GLOB_BRACE);
+  		echo $caminho = $foto ? SYSTEM_URL.'public/fotos/' . pathinfo($foto[0],PATHINFO_BASENAME) : SYSTEM_URL.'public/fotos/generica.png'; ?>" />
+</a>

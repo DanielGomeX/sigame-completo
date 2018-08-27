@@ -1,0 +1,17 @@
+<div>
+	<p><?=$this->mensagem?></p><br />
+	<form autocomplete="on" method="post">
+		<label class="uname" for="senha">Entre com uma nova senha</label>
+		<input type="password" name="senha" id="senha"
+			required="required" />
+		<label class="uname" for="confSenha">Confirme sua nova senha</label>
+		<input type="password" name="confSenha" id="confSenha"
+			required="required" />
+		<p class="login button">
+			<input type="submit" value="Enviar" />
+		</p>
+		<p>
+			Lembrou sua senha? <a href="<?=$this->hrefLogin?>" class="to_login">Entrar</a>
+		</p>
+	</form>
+</div>

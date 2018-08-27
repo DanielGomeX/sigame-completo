@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Codrops" />
+<?=$this->headTitle()?>
+<?=$this->headLink()?>
+<?=$this->headScript()?>
+<link href="<?=$this->baseUrl()?>/public/css/default/style.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?=$this->baseUrl()?>/public/css/default/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?=$this->baseUrl()?>/public/css/default/normalize.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?=$this->baseUrl()?>/public/css/default/menu_topside.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?=$this->baseUrl()?>/public/css/default/component.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="<?=$this->baseUrl()?>/public/css/default/search.css" media="screen" rel="stylesheet" type="text/css" >
+<meta charset="utf-8">
+<title>Insert title here</title>
+
+
+<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="menu-wrap">
+				<nav class="menu-top">
+					<div class="profile"><img src="<?=$this->layoutFoto?>" alt="<?=$this->layoutFoto?>" height="100px" width="100px"/><span><?=$this->layoutNome?></span></div>
+				</nav>
+				<nav class="menu-side">
+					<a href="<?php echo SYSTEM_URL;?>">Home</a>
+					<a href="<?=$this->baseUrl()?>/motorista/editarfoto">Trocar Foto</a>
+					<a href="<?=$this->baseUrl()?>/motorista/editar">Editar</a>
+					<a href="<?=$this->baseUrl()?>/grupo/index">Grupos de Trajeto</a>
+					<a href="<?=$this->baseUrl()?>/motorista/logout">Sair</a>
+				</nav>
+			</div>
+			<button class="menu-button" id="open-button">Open Menu</button>
+			<div class="content-wrap">
+				<div class="content">
+					<?php echo $this->layout()->content; ?>
+				</div>
+			</div><!-- /content-wrap -->
+		</div><!-- /container -->
+		<script src="<?=$this->baseUrl()?>/public/js/default/classie.js"></script>
+		<script src="<?=$this->baseUrl()?>/public/js/default/main.js"></script>
+	</body>
+</html>

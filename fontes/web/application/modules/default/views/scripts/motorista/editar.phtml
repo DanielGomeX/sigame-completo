@@ -1,0 +1,63 @@
+<header class="codrops-header">
+	<h1>Editar Dados</h1>
+</header>
+<div class="component">
+	<?php if($this->mensagem){?>
+  		<h2><?=$this->mensagem?></h2>
+	<?php } else{echo '<br />';}?>
+	<form action="<?=$this->action?>" method="post">
+		<table>
+			<tr>
+				<td><label><?=$this->textoNome?></label></td>
+				<td><input required="required" type="text" name="nome" id="nome"
+					value="<?=$this->postNome?>">
+				    <?php if($this->erroNome){?>
+				    	<?=$this->erroNome?><br />
+				    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+				<td><label><?=$this->textoEmail?></label></td>
+				<td><input required="required" type="text" name="email" id="email"
+					value="<?=$this->postEmail?>">
+    <?php if($this->erroEmail){?>
+    	<?=$this->erroEmail?><br />
+    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+				<td><label><?=$this->textoConfEmail?></label></td>
+				<td><input required="required" type="text" name="confEmail" id="confEmail"
+					value="<?=$this->postConfEmail?>">
+    <?php if($this->erroConfEmail){?>
+    	<?=$this->erroConfEmail?><br />
+    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+				<td><label><?=$this->textoSenha?></label></td>
+				<td><input type="password" name="senha" id="senha" value="">
+    <?php if($this->erroSenha){?>
+    	<?=$this->erroSenha?><br />
+    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+				<td><label><?=$this->textoConfSenha?></label></td>
+				<td><input type="password" name="confSenha" id="confSenha" value="">
+    <?php if($this->erroConfSenha){?>
+    	<?=$this->erroConfSenha?><br />
+    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+				<td><label><?=$this->textoSenhaAtual?></label></td>
+				<td><input required="required" type="password" name="senhaAtual" id="senhaAtual"
+					value="">
+    <?php if($this->erroSenhaAtual){?>
+    	<?=$this->erroSenhaAtual?><br />
+    <?php } else{echo '<br />';}?></td>
+			</tr>
+			<tr>
+			<td><input type="submit" value="<?=$this->textoSalvar?>"></td>
+			<td></td>
+			</tr>
+		</table>
+	</form>
+
+</div>

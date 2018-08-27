@@ -1,0 +1,12 @@
+<header class="codrops-header">
+	<h1><?=$this->grupo?> 
+		<a href="<?=$this->hrefRetornar?>"><img src="<?=$this->voltarIcon?>" /></a>
+		<a href="<?=$this->placeholder('href')->operacao . '/grupo/' . $this->id?>"> 
+			<img alt="<?=$this->textOperacao?>" title="<?=$this->textOperacao?>" src="<?=$this->icon?>">
+		</a>
+	</h1>
+</header>
+<div class="component">
+	<?=$this->renderLider?>
+	<?=$this->renderMotorista?>
+</div>

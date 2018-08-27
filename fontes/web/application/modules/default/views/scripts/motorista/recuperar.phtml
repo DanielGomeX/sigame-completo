@@ -1,0 +1,14 @@
+<header class="codrops-header">
+	<h1>Recuperar Senha</h1>
+</header>
+<div class="component">
+<p><?=$this->erroEmail?></p>
+<p><?=$this->msgRecuperarInstrucao?></p>
+<p><?=$this->msgRecuperarSucesso?></p>
+<form action="<?=$this->action?>" method="post">
+		<?=$this->textoEmail?><input type="text" name="email" id="email"
+		value="<?=$this->postEmail?>" /><br /> <input type="submit"
+		value="<?=$this->tituloRecuperar?>" />
+</form>
+<a href="<?=$this->hrefRetornar?>"><?=$this->textoRetornar?></a>
+</div>

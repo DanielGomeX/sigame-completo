@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/widget44"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	        
+            <TextView
+				android:id="@+id/lblActGrupoTrajetoSelTitulo"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/lblActGrupoTrajetoSelTitulo"
+				android:textSize="18sp"
+				android:textColor="#ffcccccc"
+				android:gravity="center" />
+
+			<TextView
+			    android:id="@+id/lblActGrupoTrajetoSelNomeGrupo"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center|left"
+			    android:text="@string/lblActGrupoTrajetoSelNomeGrupo" />
+			
+			<EditText
+			    android:id="@+id/txtActGrupoTrajetoSelNomeGrupo"
+			    android:layout_width="fill_parent"
+			    android:singleLine="true"
+			    android:layout_height="wrap_content" />
+			
+			<TextView
+			    android:id="@+id/lblActGrupoTrajetoSelLocalEncontro"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center|left"
+			    android:text="@string/lblActGrupoTrajetoSelLocalEncontro" />
+			
+			<EditText
+			    android:id="@+id/txtActGrupoTrajetoSelLocalEncontro"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:singleLine="true"
+			    android:textSize="18sp" />
+
+            
+			<TextView
+			    android:id="@+id/lblActGrupoTrajetoSelLocalDestino"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="left"
+			    android:text="@string/lblActGrupoTrajetoSelLocalDestino" />
+
+			<EditText
+			    android:id="@+id/txtActGrupoTrajetoSelGrupoLocalDestino"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:singleLine="true"
+			    android:textSize="18sp" />
+			
+			<TextView
+			    android:id="@+id/lblActGrupoTrajetoSelDataSaida"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center|left"
+			    android:text="@string/lblActGrupoTrajetoSelDataSaida" />
+			
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                
+               <Spinner
+                android:id="@+id/cboActGrupoTrajetoSelDia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                <Spinner
+                android:id="@+id/cboActGrupoTrajetoSelMes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+                 <Spinner
+                android:id="@+id/cboActGrupoTrajetoSelAno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                
+            </LinearLayout>
+            
+			<TextView
+			    android:id="@+id/lblActGrupoTrajetoSelHoraSaida"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center|left"
+			    android:text="@string/lblActGrupoTrajetoSelHoraSaida" />
+			
+			
+			<TimePicker
+			    android:id="@+id/timePickerActGrupoTrajetoSelHoraSaida"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+				
+
+		   
+			
+	        
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
